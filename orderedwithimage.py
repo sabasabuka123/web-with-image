@@ -7,13 +7,13 @@ import random
 import pyttsx3
 
 app = Flask(__name__)
-server = '192.168.1.4'
+server = ''
 database = 'test'
 username = 'sa'
-password = 'SqlPassW0rd'
+password = '22'
 cnxn = pyodbc.connect('DRIVER={SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 
-openai.api_key = "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"
+openai.api_key = "123"
 chat_log = []
 
 def generate_picture(prompt, n=1, size="512x512"):
